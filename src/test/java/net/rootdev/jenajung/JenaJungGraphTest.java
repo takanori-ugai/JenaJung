@@ -14,9 +14,9 @@ import org.apache.jena.util.FileManager;
 import edu.uci.ics.jung.graph.util.Pair;
 import java.net.URL;
 import java.util.Collection;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
@@ -28,7 +28,7 @@ public class JenaJungGraphTest {
     public JenaJungGraphTest() {
     }
 
-    @BeforeClass
+    @BeforeAll
     public static void setUpClass() throws Exception {
         URL t = JenaJungGraphTest.class.getResource("/model.ttl");
         Model model = FileManager.get().loadModel(t.toExternalForm());

@@ -45,9 +45,8 @@ public class ToImage {
         layout.setSize(new Dimension(width, height));
         VisualizationImageServer<RDFNode, Statement> viz =
                new VisualizationImageServer(layout, new Dimension(width, height));
-        RenderContext context = viz.getRenderContext();
-        context.setEdgeLabelTransformer(Transformers.EDGE);
-        context.setVertexLabelTransformer(Transformers.NODE);
+        viz.getRenderContext().setEdgeLabelTransformer(Transformers.EDGE);
+        viz.getRenderContext().setVertexLabelTransformer(Transformers.NODE);
 
 
         viz.setPreferredSize(new Dimension(width, height));
