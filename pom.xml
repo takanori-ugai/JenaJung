@@ -127,6 +127,7 @@
         </plugins>
     </reporting>
     <properties>
+        <jena.version>6.3.0</jena.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
